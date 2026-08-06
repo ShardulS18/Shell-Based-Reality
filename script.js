@@ -173,7 +173,7 @@ async function loadTextures() {
     clouds: await PIXI.Assets.load("Clouds.svg"),
     rock: await PIXI.Assets.load("Rock.svg"),
     backgroundrock: await PIXI.Assets.load("BackgroundRock.svg"),
-    backgroundrock2: await PIXI.Assets.load("BackgroundRock2.svg"),
+    backgroundrock2: await PIXI.Assets.load("Backgroundrock2.svg"),
     bedroom: await PIXI.Assets.load("BedroomScene.svg"),
     phone: await PIXI.Assets.load("PhoneScene.svg"),
     diningRoom: await PIXI.Assets.load("DiningRoom.svg"),
