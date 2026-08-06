@@ -554,7 +554,11 @@ function loadNewPathScene() {
             setTimeout(() => {
                 gsap.to(images.newPath, {
                     alpha: 0,
-                    duration: 1
+                    duration: 1,
+                    onComplete: () => {
+                        localStorage.setItem('shellGameCompleted', 'true');
+                        window.location.href = 'index.html';
+                    }
                 });
             }, 5000);
         }

@@ -51,4 +51,28 @@ function animateParticles() {
   requestAnimationFrame(animateParticles);
 }
 
+function startGame() {
+  localStorage.removeItem("shellGameCompleted");
+  window.location.href = "console.html";
+}
+
+function updateLandingPage() {
+  var introText = document.getElementById("introText");
+  var gameButton = document.getElementById("gameButton");
+
+  if (!introText || !gameButton) {
+    return;
+  }
+
+  if (localStorage.getItem("shellGameCompleted") === "true") {
+    introText.innerHTML = "<b>Thanks for playing... hope you enjoyed the concept!</b>";
+    gameButton.textContent = "PLAY AGAIN";
+  } else {
+    introText.innerHTML = "<b>What if learning the terminal didn’t feel like staring at a blank screen? Start the game and discover how fun learning Linux can really be! Ready to start?</b>";
+    gameButton.textContent = "NEW GAME";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateLandingPage);
+
 animateParticles();
