@@ -29,11 +29,13 @@ p {
 }
 
 #terminal-container {
+    position: relative;
     width: 33%;
     background-color: black;
     height: 100vh;
     overflow: hidden;
-    padding-top: 1%;
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
 /* Media Queries for Dynamic Asset Loading */
@@ -48,18 +50,18 @@ textarea.xterm-helper-textarea {
     opacity: 0;
 }
 
-.xterm-viewport {
-    height: 0px; /* Set desired height */
-    width: auto;  /* Set desired width */
-    position: relative;
-  }
+.xterm-viewport,
+.xterm-screen {
+    overflow: hidden !important;
+}
 
-  #hoverboard {
+#hoverboard {
     position: absolute; /* Allows precise positioning */
     top: 10px; /* Align it near the top */
-    left: 15%; /* Center horizontally */
-    transform: translateX(-50%); /* Offset to center correctly */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.12); /* Semi-transparent background */
     border: 1px solid #ccc; /* Optional border for clarity */
     border-radius: 10px; /* Rounded corners */
     color: white;
@@ -73,7 +75,6 @@ textarea.xterm-helper-textarea {
     max-width: 90%; /* Limit the width to avoid overflow */
     white-space: nowrap; /* Prevent text wrapping */
     box-sizing: border-box; /* Includes padding in size calculations */
-    margin-bottom: 10%;
 }
 
   

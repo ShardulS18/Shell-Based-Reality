@@ -16,6 +16,8 @@ if (!window.Terminal || !terminalContainer) {
     cursorStyle: "block",
     fontSize: 14,
     fontFamily: "monospace",
+    scrollback: 0,
+    wheelScrollLines: 0,
   });
 
   terminal.open(terminalContainer);
