@@ -4,15 +4,5 @@
     "gsap": "^3.12.5",
     "pixi-sound": "^3.0.5",
     "pixi.js": "^8.6.4"
-  },
-  "scripts": {
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-,
-  "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "vite": "^6.1.0"
   }
 }
