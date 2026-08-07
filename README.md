@@ -19,4 +19,4 @@ Shell Reality Simulator is an innovative web-based educational game designed to 
 ## **Setup Instructions**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sriyamukkavilli/shell.git
+   git clone https://github.com/ShardulS18/Shell-Based-Reality.git
