@@ -12,7 +12,7 @@ Shell Reality Simulator is an innovative web-based educational game designed to 
 ---
 
 ## **Demo**
-[Play the Game Now](https://shell.sriyams.art/)
+[Play the Game Now](https://shellrealitysimulator.in/)
 
 ---
 
